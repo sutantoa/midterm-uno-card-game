@@ -12,9 +12,9 @@ package midtermreviewcodeforpartc;
 public class UserNameValidator {
     
     public static boolean checkName(String name){
-        boolean check = true;
-        if (name == null)
-            check = false;
+        boolean check = false;
+        if (name.length() > 0)
+            check = true;
         return check;
     }
     
